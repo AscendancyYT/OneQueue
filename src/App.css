@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 20px;
+  border-bottom: 1px solid #000;
 }
 .container .navbar .logo {
   width: 25%;
@@ -28,12 +28,12 @@
   align-items: center;
   justify-content: center;
   font-family: 'Urbanist', sans-serif;
-  font-size: 2.5rem; 
+  font-size: 38px; 
   letter-spacing: -0.5px;
   text-transform: lowercase;
   color: #fff;
+  line-height: 1;
 }
-
 .container .navbar .logo .one {
   font-weight: 300; 
   color: #111827;  
@@ -41,11 +41,46 @@
   align-items: center;
   justify-content: center;
 }
-
 .container .navbar .logo .queue {
   font-weight: 800;
   color: #111827;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.container .navbar .logo .one,
+.container .navbar .logo .queue {
+  display: inline-block;
+  line-height: 1;
+}
+.container .navbar .navigation{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .navbar .navigation li .nav-link{
+  font-size: larger;
+  color: #111827;
+  transition: all .2s linear;
+}
+.container .navbar .navigation li .nav-link:hover{
+  font-size: x-large;
+}
+.container .navbar .start{
+  width: 200px;
+  margin-right: 20px;
+  height: 50px;
+  border: none;
+  background-color: #111827;
+  color: #fff;
+  border-radius: 10px;
+  transition: all .2s linear;
+  cursor: pointer;
+}
+.container .navbar .start:hover{
+  border: 1px solid #111827;
+  background-color: #fff;
+  color: #111827;
 }
